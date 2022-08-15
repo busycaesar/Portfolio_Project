@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body style="max-width: 1024px; margin-left: auto;
+  margin-right: auto;">
+    <script src="./Script.js"></script>
+    <h1 style="border-radius: 10px;">Contact Form</h1>
+    <form method="POST" method="POST" action="https://httpbin.org/post">
+      <label for="name">
+        Name*
+        <input id="name" name="name" type="text" placeholder="Name" required />
+      </label>
+      <br /><br />
+
+      <label for="email"
+        >Email*
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="web222@seneca.com"
+          required
+        />
+      </label>
+      <br /><br />
+      <fieldset>
+        <legend>Address</legend>
+        <br />
+        <label for="suite">
+          Apt/Suite No.
+          <input id="suite" name="suite" type="text" placeholder="105" />
+        </label>
+        <br /><br />
+        <label for="street">
+          Street
+          <input
+            id="street"
+            name="street"
+            type="text"
+            placeholder="85 Silver Spring Blvd."
+          />
+        </label>
+        <br /><br />
+        <label for="city"
+          >City
+          <input id="city" name="city" placeholder="Toronto" list="comCity" />
+          <datalist id="comCity">
+            <option value="TORONTO">TORONTO</option>
+            <option value="VANCOUVER">VANCOUVER</option>
+            <option value="MONTREAL">MONTREAL</option>
+            <option value="NIAGARA FALLS">NIAGARA FALLS</option>
+            <option value="VICTORIA">VICTORIA</option>
+            <option value="HALIFAX">HALIFAX</option>
+            <option value="QUEBEC CITY">QUEBEC CITY</option>
+            <option value="CALGARY">CALGARY</option>
+            <option value="OTTAWA">OTTAWA</option>
+            <option value="EDMONTON">EDMONTON</option>
+          </datalist>
+        </label>
+
+        <label for="postalcode"
+          >Postal Code
+          <input
+            id="postalcode"
+            name="postalcode"
+            placeholder="M1V 1W3"
+            pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$"
+          />
+        </label>
+      </fieldset>
+      <br /><br />
+      <input id="question" type="radio" name="MESSAGE" onclick="blank()" required />
+      <label> Question* </label>
+      <input id="comment" type="radio" name="MESSAGE" onclick="blank()" required />
+      <label> Comment* </label
+      ><input id="hiring" type="radio" name="MESSAGE" onclick="radio()" required />
+      <label id="payRate"> Hiring*
+    <input id="pay" name="pay" type="text" pattern="^\d+$" placeholder="Hourly Rate" hidden>    
+    </label>
+      <br /><br />
+      <label>
+        Text/Feedback Area<br /><br />
+        <textarea id="textarea" name="textarea" rows="5" required>
+        </textarea></label
+      ><br /><br />
+      * are the required fields.<br /><br />
+      <button>SUBMIT</button>
+    </form>
+    <a href="index.html">
+    <button id="navBack" onclick="home()">Back</button></a>
+  </body>
+</html>
