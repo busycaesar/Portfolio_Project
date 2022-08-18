@@ -123,14 +123,8 @@ function background() {
       row = document.createElement("tr"),
       data1 = document.createElement("td"),
       data2 = document.createElement("td");
-    table.style.fontSize = "20px";
-    data1.style.backgroundColor = "#25283D";
-    data1.style.color = "#FFFFE8";
-    data1.style.padding = "30px 50px";
-    data1.style.width = "60%";
-    data2.style.backgroundColor = "#FFFFE8";
-    data2.style.color = "#25283D";
-    data2.style.padding = "30px 50px";
+    data1.id="degreeN";
+    data2.id="uniN";
     data1.innerText = Education[i];
     i++;
     data2.innerHTML = Education[i] + "<br>" + Education[i + 1];

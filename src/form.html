@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Contact Form</title>
   </head>
-  <body style="max-width: 1024px; margin-left: auto;
-  margin-right: auto;">
+  <body style="max-width: 1024px; margin-left: auto; margin-right: auto">
     <script src="./Script.js"></script>
-    <h1 style="border-radius: 10px;">Contact Form</h1>
+    <h1 style="border-radius: 10px">Contact Form</h1>
     <form method="POST" method="POST" action="https://httpbin.org/post">
       <label for="name">
         Name*
@@ -74,14 +73,40 @@
         </label>
       </fieldset>
       <br /><br />
-      <input id="question" type="radio" name="MESSAGE" onclick="blank()" required />
+      <input
+        id="question"
+        type="radio"
+        name="MESSAGE"
+        onclick="blank()"
+        required
+      />
       <label> Question* </label>
-      <input id="comment" type="radio" name="MESSAGE" onclick="blank()" required />
+      <input
+        id="comment"
+        type="radio"
+        name="MESSAGE"
+        onclick="blank()"
+        required
+      />
       <label> Comment* </label
-      ><input id="hiring" type="radio" name="MESSAGE" onclick="radio()" required />
-      <label id="payRate"> Hiring*
-    <input id="pay" name="pay" type="text" pattern="^\d+$" placeholder="Hourly Rate" hidden>    
-    </label>
+      ><input
+        id="hiring"
+        type="radio"
+        name="MESSAGE"
+        onclick="radio()"
+        required
+      />
+      <label id="payRate">
+        Hiring*
+        <input
+          id="pay"
+          name="pay"
+          type="text"
+          pattern="^\d+$"
+          placeholder="Hourly Pay Rate"
+          hidden
+        />
+      </label>
       <br /><br />
       <label>
         Text/Feedback Area<br /><br />
@@ -92,6 +117,7 @@
       <button>SUBMIT</button>
     </form>
     <a href="index.html">
-    <button id="navBack" onclick="home()">Back</button></a>
+      <button id="navBack" onclick="home()">Back</button></a
+    >
   </body>
 </html>
