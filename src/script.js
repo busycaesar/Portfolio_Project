@@ -2,9 +2,9 @@
 const Navigation = ["EDUCATION", "ABOUT", "HOME"];
 const HomeButton = ["DOWNLOAD RESUME", "CONTACT"];
 const BasicInformation = [
-  "Age: 19",
+  "Age: 20",
   "Email: djshah11@myseneca.ca",
-  "Language: English, Gujarati, Hindi",
+  "Language: English, Gujarati, Hindi, French",
   "Class Section: NCC",
   "Student ID: 131623217",
   "Instructor: Mr. Mark Meritt",

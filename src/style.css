@@ -1,4 +1,5 @@
-@media screen and (min-width: 480px){
+@media only screen and (min-width: 601px)
+{
 body {
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -186,10 +187,9 @@ width: 60%;
 background-color: #FFFFE8;
 color: #25283D;
 padding: 30px 50px;
-}
-}
+}}
 
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 600px){
   body {
     margin: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
