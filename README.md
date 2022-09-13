@@ -1,6 +1,6 @@
 # Portfolio Project
 
-## This is the final project of WEB 222(Web Programming and Principles) where we had to create a personal website which contains our own information and a lot of other functionality in the front-end of the website.
+## This is the final project of WEB 222(Web Programming and Principles) where we had to create a front-end of a website containing our own information and a lot of other functionality such as contact form, reactiveness, buttons etc.
 
 # Warning
 
