@@ -3,11 +3,11 @@ const Navigation = ["EDUCATION", "ABOUT", "HOME"];
 const HomeButton = ["DOWNLOAD RESUME", "CONTACT"];
 const BasicInformation = [
   "Age: 20",
-  "Email: djshah11@myseneca.ca",
-  "Language: English, Gujarati, Hindi, French",
-  "Class Section: NCC",
-  "Student ID: 131623217",
-  "Instructor: Mr. Mark Meritt",
+  "Email: busycaesar@gmail.com",
+  "Language: English, Gujarati, Hindi",
+  "Home Town: Vadodara, India",
+  "Current Location: Toronto",
+  "Educational Institute: Seneca College",
 ];
 const Education = [
   "Advanced Diploma in Computer Programming and Analysis (2nd Sem)",
@@ -88,11 +88,11 @@ function about() {
     declaration = document.createElement("article"),
     head = document.createElement("h3"),
     honesty =
-      "I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.",
+      "I am a Computer Programming and Analysis student at Seneca College. I am practicing functional front-end development. I like Web Development and would love to dive deep into this CS technology.",
     basicInfo = document.createElement("div");
   content.innerHTML = "";
   heading.id = "About";
-  heading.innerText = "About Me and Academic Honesty!";
+  heading.innerText = "About Me";
   declaration.innerText = honesty + " Date: 14 / 08 / 2022";
   basicInfo.id = "BasicI";
   head.innerText = "Basic Information";
